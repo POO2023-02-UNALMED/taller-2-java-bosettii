@@ -32,12 +32,4 @@ public class Auto{
 
     }
 
-
-    public static void main(String args[]){
-        Auto a1 = new Auto();
-        Asiento as1= new Asiento();
-    
-        System.out.println("Hello world");
-    
-    }
 }
