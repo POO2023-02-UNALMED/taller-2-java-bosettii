@@ -34,10 +34,17 @@ public class Auto{
 
 
     public static void main(String args[]){
-        Auto a1 = new Auto();
-        Asiento as1= new Asiento();
-    
-        System.out.println("Hello world");
+        TestAtributos t = new TestAtributos();
+        t.testAtributosAsiento();
+        t.testAtributosAuto();
+        t.testAtributosMotor();
+
+        TestMetodos tm = new TestMetodos();
+        tm.testMetodoAsignarTipo();
+        tm.testMetodoCambiarColor();
+        tm.testMetodoCambiarRegistro();
+        tm.testMetodoCantidadAsientos();
+        tm.testMetodoVerificarIntegridad();
     
     }
 }
