@@ -23,7 +23,7 @@ public class Auto{
     
 
     String verificarIntegridad(){
-        String ret = "Auto original";
+        String ret ="Auto original";
 
         if (this.registro != this.motor.registro)
             ret="Las piezas no son originales";
@@ -32,11 +32,28 @@ public class Auto{
         {
             if(this.asientos[j] != null)
                 if(this.registro != asientos[j].registro)
-                    ret= "Las piezas no son originales";
+                    ret="Las piezas no son originales";
         }
     
         return ret;
 
     }
+
+
+    /*public static void main(String args[]){
+		Motor m1 = new Motor();
+		Motor m2 = new Motor();
+		m1.tipo = "normal";
+		m2.tipo = "normal";
+		
+		m1.asignarTipo("hibrido");
+		m2.asignarTipo("electrico");
+		
+		if(m1.tipo.equals("normal") && 
+				m2.tipo.equals("electrico")) {
+			System.out.println("test normal electrique");
+		}
+        
+    }*/
 
 }
