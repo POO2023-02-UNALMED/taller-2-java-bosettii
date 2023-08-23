@@ -3,7 +3,7 @@ public class Auto{
 
     String modelo;
     int precio;
-    Asiento[] asientos;
+    Asiento asientos[];
     String marca;
     Motor motor;
     int registro;
@@ -14,7 +14,14 @@ public class Auto{
     }
 
     public int cantidadAsientos(){
-        return this.asientos.length;
+        int c = 0;
+        for(int i = 0; i<this.asientos.length;i++){
+            if(asientos[i] != null)
+                c++;
+
+        }
+
+        return c;
     }
     
 
