@@ -9,9 +9,10 @@ public class Motor{
     }
     
     void asignarTipo(String t){
+        int a;
         if(t != "gasolina" && t != "electrico"){
-            return 0;
+            a++;
         }else
-            tipo = t;
+            this.tipo = t;
     }
 }
